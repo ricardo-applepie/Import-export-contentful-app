@@ -1,0 +1,118 @@
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+
+
+ul li {
+    list-style: none;
+}
+
+
+.checkbox_wrapper{
+    border: 1px solid #192532 ;
+}
+.display-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.import_submit-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0 20px 0;
+}
+.checkbox_wrapper-list-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.form-border{
+    border-top: 1px solid #192532;
+    border-bottom: 1px solid #192532;
+}
+.total-contents{
+    text-align: right;
+}
+.checkbox_wrapper-list-item-paragraph{
+    margin: 2px 0px 2px 5px;
+}
+.import-complete,.import-complete__title{
+border: 1px solid #192532;
+}
+
+@media screen and (max-width:1200px) {
+   
+}
+
+@media screen and (min-width:900px) {
+    p{
+     font-size: 18px;
+    }
+    .checkbox_wrapper{
+    max-width: 700px;
+    width: 500px;
+   margin: 10px 0 0 0 ;
+    padding: 10px 0 10px 8px;
+    }
+    .import-complete{
+        width: 400px;
+        height: 300px;
+        margin: 100px auto;
+    }
+    .modal-wrapper-importing{
+        text-align: center;
+    }
+    .import-title-border{
+        padding: 10px 0 15px 0;
+        border-bottom: 1px solid #192532;
+    }
+    .modal-wrapper-importing{
+        padding: 40px 0 60px 0;
+    }
+  .progressbar{
+      width: 100px;
+      height: 5px;
+     
+  }
+  .management__token{
+      display: flex;
+      flex-direction: row;
+      margin: 30px 0 0 0 ;
+  }
+  .management__token__button{
+      margin-left: 20px;
+  }
+    .import-details{
+        text-align: center;
+        margin: 50px 0 0 0;
+    }
+    .import-complete__title{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 4px ;
+    }
+    .import-details_ok-btn{
+        margin:30px 0 0 0 ;
+    }
+    .form-import__wrapper{
+      margin: 10px 0px 70px 0px ;
+    }
+.page-wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+}
