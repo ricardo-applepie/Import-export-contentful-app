@@ -15,17 +15,15 @@ import '@contentful/forma-36-react-components/dist/styles.css';
 import '@contentful/forma-36-fcss/dist/styles.css';
 import '@contentful/forma-36-tokens/dist/css/index.css';
 import './index.css';
-
 import Config from './components/ConfigScreen';
 import EntryEditor from './components/EntryEditor';
 import Page from './views/Page';
 import Sidebar from './components/Sidebar';
 import Field from './components/Field';
 import Dialog from './components/Dialog';
-
 import LocalhostWarning from './components/LocalhostWarning';
-import { Provider } from 'react-redux'
-import {store} from "./store/store"
+import { Provider } from 'react-redux';
+import { store } from './store/store';
 
 if (process.env.NODE_ENV === 'development' && window.self === window.top) {
   // You can remove this if block before deploying your app
@@ -61,9 +59,11 @@ if (process.env.NODE_ENV === 'development' && window.self === window.top) {
       },
       {
         location: locations.LOCATION_PAGE,
-        component: <Provider store={store}>
-                      <Page sdk={sdk as PageExtensionSDK} />
-                  </Provider>  ,
+        component: (
+          <Provider store={store}>
+            <Page sdk={sdk as PageExtensionSDK} />
+          </Provider>
+        ),
       },
     ];
 

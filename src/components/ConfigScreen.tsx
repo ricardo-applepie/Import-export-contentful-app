@@ -1,8 +1,12 @@
 import React, { useCallback, useState, useEffect } from 'react';
 import { AppExtensionSDK } from '@contentful/app-sdk';
-import { Heading, Form, Workbench, Paragraph } from '@contentful/forma-36-react-components';
- import {Button} from '@contentful/forma-36-react-components';
-
+import {
+  Heading,
+  Form,
+  Workbench,
+  Paragraph,
+} from '@contentful/forma-36-react-components';
+import { Button } from '@contentful/forma-36-react-components';
 import { css } from 'emotion';
 
 export interface AppInstallationParameters {}
@@ -43,7 +47,8 @@ const Config = (props: ConfigProps) => {
     (async () => {
       // Get current parameters of the app.
       // If the app is not installed yet, `parameters` will be `null`.
-      const currentParameters: AppInstallationParameters | null = await props.sdk.app.getParameters();
+      const currentParameters: AppInstallationParameters | null =
+        await props.sdk.app.getParameters();
 
       if (currentParameters) {
         setParameters(currentParameters);
@@ -52,8 +57,8 @@ const Config = (props: ConfigProps) => {
       // Once preparation has finished, call `setReady` to hide
       // the loading screen and present the app to a user.
       props.sdk.app.setReady();
-    })()
-  }, [props.sdk])
+    })();
+  }, [props.sdk]);
 
   return (
     <Workbench className={css({ margin: '80px' })}>
@@ -63,7 +68,7 @@ const Config = (props: ConfigProps) => {
         <Button
           buttonType="primary"
           onClick={() => {
-            console.log("You clicked on Forma36 button")
+            console.log('You clicked on Forma36 button');
           }}
         >
           Click on me
@@ -71,6 +76,6 @@ const Config = (props: ConfigProps) => {
       </Form>
     </Workbench>
   );
-}
+};
 
 export default Config;
