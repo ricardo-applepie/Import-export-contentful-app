@@ -1,9 +1,7 @@
 import { Checkbox, TextInput } from '@contentful/forma-36-react-components';
 // import { init as initContentfulApp } from '@contentful/app-sdk';
-
 import { useHistory } from 'react-router-dom';
 import { Line } from 'rc-progress';
-
 import React, { useEffect } from 'react';
 import '../styles/custom.css';
 import {
