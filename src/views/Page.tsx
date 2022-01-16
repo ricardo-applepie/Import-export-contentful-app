@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { PageExtensionSDK } from '@contentful/app-sdk';
 import Home from './Home';
 import Importing from './importing';
+
 interface PageProps {
   sdk: PageExtensionSDK;
 }
